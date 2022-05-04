@@ -1,4 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
+  font-size: 16px;
+  line-height: 1.4em;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+header {
+  background-color: #465151;
+  color: #f4f4f4;
+  font-size: 24px;
+  float: left;
+  width: 100%;
+  padding-top: 25px;
+  font-weight: bold;
+}
+header .header-name {
+  color: orangered;
+}
+nav {
+  float: right;
+  font-weight: lighter;
+}
+nav li {
+  list-style: none;
+  display: inline;
+  font-size: 16px;
 }
