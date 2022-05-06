@@ -2,13 +2,19 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 .container {
   width: 80%;
   margin: auto;
+  /* this property is super importante */
+  overflow: hidden;
 }
-body {
-  background-color: #f4f4f4;
-}
+
 header {
   height: 60px;
   background-color: #92a8d1;
@@ -79,7 +85,7 @@ section form {
 }
 section input[type="email"] {
   height: 20px;
-  width: 220px;
+  width: 210px;
 }
 section button {
   height: 24px;
@@ -99,25 +105,27 @@ section#boxes {
 section .box-1 img {
   width: 100px;
   height: 100px;
+  box-sizing: border-box;
 }
 section .box-2 img {
   width: 100px;
   height: 100px;
+  box-sizing: border-box;
 }
 section .box-3 img {
   width: 100px;
   height: 100px;
+  box-sizing: border-box;
 }
 section .box {
   float: left;
   width: 33%;
+  height: 202px;
   text-align: center;
 }
-.clr {
-  clear: both;
-  height: 62px;
-}
+
 footer {
+  font-weight: bold;
   padding-top: 15px;
   color: #f4f4f4;
   height: 30px;
@@ -127,6 +135,7 @@ footer {
 }
 
 @media (max-width: 768px) {
+  /* -----------header-------------------------- */
   header {
     height: 80px;
     text-align: center;
@@ -138,9 +147,44 @@ footer {
   header ul {
     padding-top: 10px;
   }
+  /* -----------main section-------------------------- */
+  section#main-section {
+    max-height: 300px;
+  }
+  /* -----------form-------------------------- */
+  section#main-submision {
+    margin-top: 0;
+    padding-top: 0;
+    height: 120px;
+    text-align: center;
+  }
   section .main-form h2,
   section form {
     float: none;
-    text-align: center;
+  }
+  section h2 {
+    margin-top: 15px;
+  }
+  section input[type="email"] {
+    background-color: #f4f4f4;
+    border: none;
+    width: 200px;
+  }
+  section button {
+    margin-top: 4px;
+    width: 200px;
+  }
+  /* -----------boxes-------------------------- */
+  section#boxes {
+    float: none;
+  }
+  section#boxes .box-1 {
+    width: 100%;
+  }
+  section#boxes .box-2 {
+    width: 100%;
+  }
+  section#boxes .box-3 {
+    width: 100%;
   }
 }
