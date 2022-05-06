@@ -15,6 +15,7 @@ header {
   font-weight: bolder;
   text-transform: uppercase;
   color: #f4f4f4;
+  border-bottom: solid 2px #b87979;
 }
 header p {
   font-size: 24px;
@@ -43,4 +44,103 @@ header a {
 }
 header a:hover {
   color: #b87979;
+}
+section#main-section {
+  background: url("./imgs/computer.jpg") no-repeat -30px;
+  height: 400px;
+  text-align: center;
+}
+section#main-section h2 {
+  padding-top: 60px;
+  font-size: 30px;
+  color: #b87979;
+  font-weight: bold;
+}
+section#main-section p {
+  color: #b87979;
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+section#main-submision {
+  background-color: #92a8d1;
+  height: 60px;
+}
+
+section .main-form h2 {
+  float: left;
+  margin-top: 17px;
+  color: #f4f4f4;
+  font-size: 20px;
+}
+section form {
+  float: right;
+  margin-top: 18px;
+}
+section input[type="email"] {
+  height: 20px;
+  width: 220px;
+}
+section button {
+  height: 24px;
+  width: 90px;
+  border: none;
+  color: #f4f4f4;
+  background-color: #b87979;
+  text-transform: uppercase;
+}
+section button:hover {
+  color: white;
+}
+
+section#boxes {
+  margin-top: 20px;
+}
+section .box-1 img {
+  width: 100px;
+  height: 100px;
+}
+section .box-2 img {
+  width: 100px;
+  height: 100px;
+}
+section .box-3 img {
+  width: 100px;
+  height: 100px;
+}
+section .box {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+.clr {
+  clear: both;
+  height: 62px;
+}
+footer {
+  padding-top: 15px;
+  color: #f4f4f4;
+  height: 30px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #b87979;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 80px;
+    text-align: center;
+  }
+  header #branding,
+  header ul {
+    float: none;
+  }
+  header ul {
+    padding-top: 10px;
+  }
+  section .main-form h2,
+  section form {
+    float: none;
+    text-align: center;
+  }
 }
