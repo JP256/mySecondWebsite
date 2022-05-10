@@ -51,6 +51,9 @@ header a {
 header a:hover {
   color: #b87979;
 }
+header .current {
+  color: #b87979;
+}
 section#main-section {
   background: url("./imgs/computer.jpg") no-repeat -30px;
   height: 400px;
@@ -124,27 +127,54 @@ section .box {
   text-align: center;
 }
 
-.sideLeft {
+section#AboutUs {
   float: left;
-  width: 56%;
+  width: 70%;
   margin-top: 20px;
   text-align: justify;
   box-sizing: border-box;
 }
 
-.sideRight {
+aside#side {
+  float: right;
+  width: 30%;
+  margin-top: 20px;
+  text-align: justify;
+  box-sizing: border-box;
+}
+section h3 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+section #service-1,
+section #service-2,
+section #service-3 {
+  background-color: #d3d3d3;
+  border: 1px solid #000;
+  padding: 15px;
+  margin-bottom: 5px;
+}
+section#Services {
+  float: left;
+  width: 60%;
+}
+section#Services h4 {
+  margin-bottom: 10px;
+}
+aside#Quotes {
+  color: #f4f4f4;
+  height: 300px;
+  margin-top: 10px;
   float: right;
   width: 40%;
-  margin-top: 20px;
-
-  text-align: justify;
-  box-sizing: border-box;
+  background-color: #b87979;
 }
 footer {
+  clear: both;
   font-weight: bold;
   padding-top: 15px;
   color: #f4f4f4;
-  height: 20px;
+  height: 30px;
   font-size: 16px;
   text-align: center;
   background-color: #b87979;
@@ -202,6 +232,14 @@ footer {
     width: 100%;
   }
   section#boxes .box-3 {
+    width: 100%;
+  }
+  section#AboutUs {
+    float: none;
+    width: 100%;
+  }
+  aside#side {
+    float: none;
     width: 100%;
   }
 }
